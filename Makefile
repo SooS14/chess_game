@@ -5,7 +5,7 @@ LDLIBS?=-lm -lstdc++
 
 INCLUDE_PATH = ./include
 
-TARGET   = echecs
+TARGET   = chess
 
 SRCDIR   = src
 OBJDIR   = obj
