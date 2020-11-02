@@ -1,0 +1,26 @@
+\hypertarget{classBishop}{}\section{Bishop Class Reference}
+\label{classBishop}\index{Bishop@{Bishop}}
+
+
+Inheritance diagram for Bishop\+:
+% FIG 0
+
+
+Collaboration diagram for Bishop\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classBishop_a7c3551409937bd06092a7ce918e53bb9}\label{classBishop_a7c3551409937bd06092a7ce918e53bb9}} 
+{\bfseries Bishop} (std\+::string name, int id, char color, bool first\+\_\+move, bool en\+\_\+passant)
+\item 
+\mbox{\Hypertarget{classBishop_a8ab24ad9fb37de3ddba6ed2f0d5a6798}\label{classBishop_a8ab24ad9fb37de3ddba6ed2f0d5a6798}} 
+bool {\bfseries move} (int $\ast$move\+\_\+grid, char $\ast$$\ast$game\+\_\+state, bool err\+\_\+report)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/piece.\+h\item 
+src/piece.\+cpp\end{DoxyCompactItemize}

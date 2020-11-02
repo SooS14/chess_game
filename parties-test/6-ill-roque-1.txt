@@ -1,0 +1,17 @@
+e2e4
+e7e5
+f1c4
+O-O
+g8f6
+O-O
+g1f3
+f8b4
+O-O
+e8e7
+a2a3
+O-O
+e7e8
+a3b4
+O-O
+h7h6
+/quit

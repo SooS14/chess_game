@@ -1,0 +1,56 @@
+\hypertarget{classPiece}{}\section{Piece Class Reference}
+\label{classPiece}\index{Piece@{Piece}}
+
+
+most important class of the program  
+
+
+
+
+{\ttfamily \#include $<$piece.\+h$>$}
+
+
+
+Inheritance diagram for Piece\+:
+% FIG 0
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classPiece_acbe47e24bee09b8cc562a2bcd1424c51}\label{classPiece_acbe47e24bee09b8cc562a2bcd1424c51}} 
+{\bfseries Piece} (std\+::string name, int id, char color, bool first\+\_\+move, bool en\+\_\+passant)
+\item 
+\mbox{\Hypertarget{classPiece_a236697193d2add8d3872aa8b6813ce79}\label{classPiece_a236697193d2add8d3872aa8b6813ce79}} 
+int {\bfseries get\+\_\+id} () const
+\item 
+\mbox{\Hypertarget{classPiece_a5a18c08757a0eccdc6fd0686d4db6743}\label{classPiece_a5a18c08757a0eccdc6fd0686d4db6743}} 
+char {\bfseries get\+\_\+color} () const
+\item 
+\mbox{\Hypertarget{classPiece_a22d040f3742f7f8ac12dce9eccb0cbfe}\label{classPiece_a22d040f3742f7f8ac12dce9eccb0cbfe}} 
+bool {\bfseries get\+\_\+first\+\_\+move} () const
+\item 
+\mbox{\Hypertarget{classPiece_a1a1e76a6069d2f906a5b8a2b95c97338}\label{classPiece_a1a1e76a6069d2f906a5b8a2b95c97338}} 
+std\+::string {\bfseries get\+\_\+name} () const
+\item 
+\mbox{\Hypertarget{classPiece_a9749102d6c0dc65fbf95e1c705ee12fd}\label{classPiece_a9749102d6c0dc65fbf95e1c705ee12fd}} 
+virtual bool {\bfseries move} (int $\ast$move\+\_\+grid, char $\ast$$\ast$game\+\_\+state, bool err\+\_\+report)=0
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classPiece_a55834ea9d4700a0bccf9bad6cbd84b75}\label{classPiece_a55834ea9d4700a0bccf9bad6cbd84b75}} 
+bool {\bfseries p\+\_\+first\+\_\+move}
+\item 
+\mbox{\Hypertarget{classPiece_adacb14fe5026a05e95c9c25471842232}\label{classPiece_adacb14fe5026a05e95c9c25471842232}} 
+bool {\bfseries p\+\_\+en\+\_\+passant}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+most important class of the program 
+
+This class contains all the methods that are related to the various pieces on the \hyperlink{classChessboard}{Chessboard}. The virtual function \char`\"{}move\char`\"{} is declared here and has a different implementation for each piece. The attributes \char`\"{}p\+\_\+first\+\_\+move\char`\"{} and \char`\"{}p\+\_\+en\+\_\+passant\char`\"{} are common for all pieces despite the fact that some pieces don\textquotesingle{}t need them (for instance the knight) but it makes the program clearer. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/piece.\+h\item 
+src/piece.\+cpp\end{DoxyCompactItemize}

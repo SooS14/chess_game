@@ -1,0 +1,116 @@
+\hypertarget{classChessboard}{}\section{Chessboard Class Reference}
+\label{classChessboard}\index{Chessboard@{Chessboard}}
+
+
+the second most important class of the program  
+
+
+
+
+{\ttfamily \#include $<$game.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classChessboard_a0647fd37fc04def4958a586c3d0100ab}{Chessboard} ()
+\begin{DoxyCompactList}\small\item\em constructor of the class \char`\"{}\+Chessboard\char`\"{} \end{DoxyCompactList}\item 
+\hyperlink{classChessboard_a53eac522998d8d92cca409493c773f54}{$\sim$\+Chessboard} ()
+\begin{DoxyCompactList}\small\item\em destructor of the \char`\"{}\+Chessboard\char`\"{} class \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classChessboard_a85e76d25576b8a42dd5a4edc3906dd43}\label{classChessboard_a85e76d25576b8a42dd5a4edc3906dd43}} 
+void \hyperlink{classChessboard_a85e76d25576b8a42dd5a4edc3906dd43}{print\+\_\+board} ()
+\begin{DoxyCompactList}\small\item\em prints the board in the standart output. \end{DoxyCompactList}\item 
+bool \hyperlink{classChessboard_a12ff4ac86a41d525388465e1a552fa11}{is\+\_\+that\+\_\+legal} (const char $\ast$move\+\_\+user, int $\ast$move\+\_\+grid, char color)
+\begin{DoxyCompactList}\small\item\em test if a command is legal \end{DoxyCompactList}\item 
+bool \hyperlink{classChessboard_a7db1f0aa2670e9183b5753386f10ac7d}{move\+\_\+pieces} (int $\ast$move\+\_\+grid)
+\begin{DoxyCompactList}\small\item\em Handles the movement of pieces. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classChessboard_a1061a56edf6eeb1185f9a538c5c2a065}\label{classChessboard_a1061a56edf6eeb1185f9a538c5c2a065}} 
+void \hyperlink{classChessboard_a1061a56edf6eeb1185f9a538c5c2a065}{deactivate\+\_\+en\+\_\+passant\+\_\+white} ()
+\begin{DoxyCompactList}\small\item\em To realise a move \char`\"{}en passant\char`\"{}, the concerned piece needs to be in a certain \char`\"{}state\char`\"{}. This function handles this state for the white team. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classChessboard_a7be80d7f0d3ea6ab343379a941e3cb5f}\label{classChessboard_a7be80d7f0d3ea6ab343379a941e3cb5f}} 
+void \hyperlink{classChessboard_a7be80d7f0d3ea6ab343379a941e3cb5f}{deactivate\+\_\+en\+\_\+passant\+\_\+black} ()
+\begin{DoxyCompactList}\small\item\em To realise a move \char`\"{}en passant\char`\"{}, the concerned piece needs to be in a certain \char`\"{}state\char`\"{}. This function handles this state for the black team. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+the second most important class of the program 
+
+This class contains all the methods that are related to the changes that are realised on the chessboard. It concerns the tasks that are not too specific to one piece. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classChessboard_a0647fd37fc04def4958a586c3d0100ab}\label{classChessboard_a0647fd37fc04def4958a586c3d0100ab}} 
+\index{Chessboard@{Chessboard}!Chessboard@{Chessboard}}
+\index{Chessboard@{Chessboard}!Chessboard@{Chessboard}}
+\subsubsection{\texorpdfstring{Chessboard()}{Chessboard()}}
+{\footnotesize\ttfamily Chessboard\+::\+Chessboard (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+constructor of the class \char`\"{}\+Chessboard\char`\"{} 
+
+The atribute c\+\_\+board is an 2 dimensions dynamically allocated array of pointees on \char`\"{}\+Piece\char`\"{} classes representing the pieces of a chess game. The empty squares of the board are represented by a pointee on N\+U\+LL. \mbox{\Hypertarget{classChessboard_a53eac522998d8d92cca409493c773f54}\label{classChessboard_a53eac522998d8d92cca409493c773f54}} 
+\index{Chessboard@{Chessboard}!````~Chessboard@{$\sim$\+Chessboard}}
+\index{````~Chessboard@{$\sim$\+Chessboard}!Chessboard@{Chessboard}}
+\subsubsection{\texorpdfstring{$\sim$\+Chessboard()}{~Chessboard()}}
+{\footnotesize\ttfamily Chessboard\+::$\sim$\+Chessboard (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+destructor of the \char`\"{}\+Chessboard\char`\"{} class 
+
+All the memory that can be deallocated with the pointees contained in c\+\_\+board is deleted. Beware that it is not the case of the pieces that were destroyed during the game since their pointees have been lost. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classChessboard_a12ff4ac86a41d525388465e1a552fa11}\label{classChessboard_a12ff4ac86a41d525388465e1a552fa11}} 
+\index{Chessboard@{Chessboard}!is\+\_\+that\+\_\+legal@{is\+\_\+that\+\_\+legal}}
+\index{is\+\_\+that\+\_\+legal@{is\+\_\+that\+\_\+legal}!Chessboard@{Chessboard}}
+\subsubsection{\texorpdfstring{is\+\_\+that\+\_\+legal()}{is\_that\_legal()}}
+{\footnotesize\ttfamily bool Chessboard\+::is\+\_\+that\+\_\+legal (\begin{DoxyParamCaption}\item[{const char $\ast$}]{move\+\_\+user,  }\item[{int $\ast$}]{move\+\_\+grid,  }\item[{char}]{color }\end{DoxyParamCaption})}
+
+
+
+test if a command is legal 
+
+First the function checks if the characters in move\+\_\+user are contained in \+: \mbox{[}a, h\mbox{]} or \mbox{[}1, 8\mbox{]}. Then it transforms these characters in int and puts them in an array given by the user \+: move\+\_\+grid. Eventually, the function checks if the movement within the chessoard is correct. It also handles the castle $\ast$ movement by filling the array \char`\"{}move\+\_\+user\char`\"{} with a special code \+: the location of the king and the position of the tower.
+
+
+\begin{DoxyParams}{Parameters}
+{\em move\+\_\+user} & a command of the user \\
+\hline
+{\em move\+\_\+grid} & an int array created by the user to contain the coordinates $\ast$ of the movement \\
+\hline
+{\em color} & of the one who is playing\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+is a bool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classChessboard_a7db1f0aa2670e9183b5753386f10ac7d}\label{classChessboard_a7db1f0aa2670e9183b5753386f10ac7d}} 
+\index{Chessboard@{Chessboard}!move\+\_\+pieces@{move\+\_\+pieces}}
+\index{move\+\_\+pieces@{move\+\_\+pieces}!Chessboard@{Chessboard}}
+\subsubsection{\texorpdfstring{move\+\_\+pieces()}{move\_pieces()}}
+{\footnotesize\ttfamily bool Chessboard\+::move\+\_\+pieces (\begin{DoxyParamCaption}\item[{int $\ast$}]{move\+\_\+grid }\end{DoxyParamCaption})}
+
+
+
+Handles the movement of pieces. 
+
+This method creates a save of the game\textquotesingle{}s state and give it to \char`\"{}move\char`\"{}, a virtual method specific to each pieces. It checks if the movement is valid. Then move\+\_\+pieces checks if the king\textquotesingle{}s moving team is in danger. If it is the $\ast$ case the movement is invalid. It also checks if the king of the opposing team is in danger.
+
+This is done by creating a \char`\"{}fake\char`\"{} movement. Indeed, each concerned pieces is given a pointee and the arrival pointee is replaced by the starting piece\textquotesingle{}s pointee. However until everything has been checked no memory is freed.
+
+If the movement is correct then all the memory that needs to be destroyed is freed thanks to the pointees created previously. If not, then the game can be restored thanks to those pointees and an error is sent to the concerned player.
+
+
+\begin{DoxyParams}{Parameters}
+{\em move\+\_\+grid} & contains the coordinates of the movement \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a bool to know if the movement have been realised 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/game.\+h\item 
+src/game.\+cpp\end{DoxyCompactItemize}
