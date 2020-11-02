@@ -1,5 +1,7 @@
 # chess_game
 
+done in 2019-2020
+
 1.	The program is separated into different folders (src for .c files; include for .h ...). To launch the compilation, stay in the main directory and run the "make" command in the terminal. A "bin" directory is created in which the "chess" executable is located. There is no checkmate.
 
 
@@ -15,6 +17,8 @@
 
 # Jeu d'échecs
 
+fait en 2019-2020
+
 1.	Le programme est séparé en différent dossiers (src pour les fichiers .c ; include pour les .h ...). Pour lancer la compilation, se rester dans le répertoire général et lancer dans le terminal la commande "make". Un répertoire "bin" est créé dans lequel se trouve l'éxécutable "chess". L'échecs et mat n'a pas été implémenté.
 
 2. 	Les fichiers piece.h et piece.cpp contiennent toutes les classes et methodes relatives aux mécaniques des pieces. Une classe générique dénommé "Piece" a été créée. Elle possède une méthode virtuelle "move" qui est utilisée avec une implémentation différente par chacune des pièces.
@@ -26,6 +30,7 @@
 
 
 
+###### à faire : checkmate
 
-######
+###### à voir
 	J'ai essayé tous les fichiers donnés en test et le programme donne bien le résultat attendu. Néanmoins, lorsque j'utilise le script shell "test-level.sh" j'ai l'impression que le script utilise un autre éxécutable "chess" que celui désiré. Je n'ai pas trouvé l'origine du problème même en faisant attention aux chemin relatifs. Ainsi, "test-level.sh" est à utiliser avec précaution puisqu'il donne les résultats relatif à une ancienne version de mon programme (qui avait des problème avec la grande roque notamment). Je ne vois pas d'où est venu le problème.
