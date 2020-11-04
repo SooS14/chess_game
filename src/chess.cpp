@@ -75,11 +75,11 @@ int read_file(const char * argv, char ** command)
  * @brief main function of the program
  *
  * If an argument is given it needs to be the name of the file containing the
- * command lines. Then the function read the file an execute each command in
+ * command lines. Then the function read the file and executes each command in
  * order. If a command is invalid, it is skipped.
  * If there is no argument, then the function will require a command from
  * both players, starting with the white one. If a command is invalid, it is
- * ignored an a new command is required from the user (that was mistaken) until
+ * ignored and a new command is required from the user (who made the mistakes) until
  * a valid command is given.
  * 
  * @param argc the number of arguments given when launching the executable
@@ -210,7 +210,7 @@ int main(int argc, char const *argv[])
 			if (who_play == 0)
 			{			
 
-			cout << "################ tour : " << count << "\n";
+			cout << "################ round : " << count << "\n";
 			cout << "the white player needs to give a command\n";
 
 
@@ -275,6 +275,7 @@ int main(int argc, char const *argv[])
 
 			}
 
+			count++;
 			who_play = 1;
 
 			}
@@ -284,7 +285,7 @@ int main(int argc, char const *argv[])
 			if (who_play == 1)
 			{			
 
-			cout << "################ tour : " << count << "\n";
+			cout << "################ round : " << count << "\n";
 			cout << "the black player needs to give a command\n";
 
 
@@ -350,6 +351,7 @@ int main(int argc, char const *argv[])
 
 			}
 
+			count++;
 			who_play = 0;
 
 			}

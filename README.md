@@ -2,6 +2,20 @@
 
 done in 2019-2020
 
+rules :
+
+compile the program using make where Makefile is located
+launch the binary file in /bin   (a filename can be given to start a game which was saved)
+
+The white player starts the game by entering the coordinates of a position on the grid (example : a2a4 to move a white pawn) 
+Then the black player needs to play
+
+O-O    : to castle kingside (short)
+O-O-O  : to castle queenside (long)
+/quit  : to surrender
+mate   : if the current player can't move it's king it can use "mate". The game checks if the king is trapped, if that's the case, the game ends. Else, a possible position if given
+
+
 1.	The program is separated into different folders (src for .c files; include for .h ...). To launch the compilation, stay in the main directory and run the "make" command in the terminal. A "bin" directory is created in which the "chess" executable is located. There is no checkmate.
 
 
@@ -33,7 +47,7 @@ fait en 2019-2020
 
 
 
-###### à faire : checkmate
+###### à faire : checkmate - fichier pour sauvegarder une partie en cours - meilleur readme
 
 ###### à voir
 	J'ai essayé tous les fichiers donnés en test et le programme donne bien le résultat attendu. Néanmoins, lorsque j'utilise le script shell "test-level.sh" j'ai l'impression que le script utilise un autre éxécutable "chess" que celui désiré. Je n'ai pas trouvé l'origine du problème même en faisant attention aux chemin relatifs. Ainsi, "test-level.sh" est à utiliser avec précaution puisqu'il donne les résultats relatif à une ancienne version de mon programme (qui avait des problème avec la grande roque notamment). Je ne vois pas d'où est venu le problème.
